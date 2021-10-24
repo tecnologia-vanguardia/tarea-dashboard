@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="assets/lobibox-master/dist/css/lobibox.min.css"/>
+	<link rel="stylesheet" href="assets/lobibox-master/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./assets/css/main.css" />
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/css/externos/dist/js/bootstrap.min.js"></script>
+	<script src="assets/js/registrar_proceso.js"></script>
+	<script src="assets/js/bootstrap-table.js"></script>
+	<script src="assets/lobibox-master/dist/js/lobibox.min.js"></script>
+	<script src="assets/lobibox-master/js/lobibox.js"></script>
+</head>
+   <title>Procesos detenidos</title>
+<body>
+	<div class="site-wrapper">
+		<div class="container-fluid">
+			<!-- header -->
+			<div id="login_header">
+				<div class="text-center">
+					<img class="logo" src= "./assets/images/heart-img.png" alt="" style="position: relative;">
+					<div class="">
+						<h1 class="titulo_principal">Caso de estudios medicos</h1>
+						<p class="sistema_nombre">Registro procesos detenidos</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3" style = "margin-top:10px">
+				<a href="#"><button class="btn btn-primary" id="btn_modal_registrar">Registrar proceso</button></a>
+			</div>
+			<div class="col-md-3" style = "margin-top:60px;"></div>
+			    <table class="table table-bordered" style = "margin-top:10px" id= "tabla-listado"></table>
+		     </div>
+			 <div class="col-md-3" style = "margin-top:10px">
+				<a href="../../index.html"><button class="btn btn-primary" id="btn_modal_registrar">Regresar</button></a>
+			</div>
+		</div>
+			<!-- MODAL REGISTRO -->
+			<div class="modal fade" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title"> Procesos detenidos</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<form id ="formulario_registro">
+					<div class="modal-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Nombre Proceso:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="nombre_proceso" placeholder="Nombre Proceso">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Descripci&oacute;n:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="descripcion" placeholder="Descripci&oacute;n">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Fecha inicio:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="password" class="form-control" id="fecha_inicio" placeholder="Fecha de inicio">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Fecha termino:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="inputEmail" class="form-control" id="fecha_termino" placeholder="Fecha de termino">
+								</div>
+							</div>
+						</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-3">
+										<label class="control-label w-100">Estatus proceso:</label>
+									</div>
+									<div class="col-md-8">
+										<select id="select_estatus" name="proceso" class="form-control select-2">
+											<option value='-1' selected>Selecciona un proceso</option>
+											<option value='1'>Normal</option>
+										</select>
+									</div>
+								</div>
+						</div>
+					</div>
+				</form>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					  <button type="button" class="btn btn-primary" id="btn_registrar">Registrar</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- TERMINO DE MODAL-->
+			<!-- MODAL Consulta -->
+			<div class="modal fade" id="consulta_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title"> Consultar procesos detenidos</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Nombre Proceso:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="nombre_proceso_consulta" placeholder="Nombre Proceso" disabled>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Descripci&oacute;n:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="descripcion_consulta" placeholder="Descripci&oacute;n" disabled>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Fecha inicio:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="fecha_inicio_consulta" placeholder="Fecha de inicio" disabled>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label w-100">Fecha termino:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="inputEmail" class="form-control" id="fecha_termino_consulta" placeholder="Fecha de termino" disabled>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+								<div class="row">
+									<div class="col-md-3">
+										<label class="control-label w-100">Estatus proceso:</label>
+									</div>
+									<div class="col-md-8">
+										<select id="select_estatus_consulta" name="proceso" class="form-control select-2" disabled>
+											<option value='1' selected>Seleccione un estatus</option>
+										</select>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- TERMINO DE MODAL-->
+		</div>
+	</div>
+	<footer class="footer" id="footer_login">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-6 col-sm-6">
+	        <p class="small text-left mayusculas resaltar">
+	        Adriana Zazueta Carrillo - 343229
+	        </p>
+	      </div>
+	      <div class="col-md-6 col-sm-6">
+	        <p class="small text-right">
+	          Email:<a href="mailto:adriana.zazueta@uabc.edu.mx"> adriana.zazueta@uabc.edu.mx</a>
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
+</body>
+</html>
