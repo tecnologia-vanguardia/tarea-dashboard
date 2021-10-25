@@ -13,6 +13,9 @@ Utilizamos Git para colaborar entre todos, y en nuestro código utilizamos la li
 
 ## Descripcion de las tecnologias utilizadas
 
+* [Bootstrap](https://getbootstrap.com/) - Se utilizo para generar la plantilla del dashboard
+* [Github](https://getbootstrap.com/) - Se utilizo para versionar el código
+* [Visual studio code](https://code.visualstudio.com/) - Editor de texto
 
 ## Descripcion de los Apartados
 
@@ -23,3 +26,7 @@ Desde aquí mandamos al usuario al menú desde el cual podrá agregar un nuevo p
 ### Solicitud de Entrega del Producto
 
 Desde aquí el usuario podra dirigirse al menú de Solicitud de Entrega del Producto, aqui el usuario podra agregar o eliminar alguna solicitud de entrega del producto.
+
+### Solicitud de Procesos detenidos
+
+Desde este apartado el usuario podrá consultar y registrar los procesos detenidos. Solo deberá darle click a los botones indicados.
