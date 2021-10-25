@@ -20,7 +20,7 @@ Utilizamos Git para colaborar entre todos, y en nuestro código utilizamos la li
 ## Descripcion de los Apartados
 
 ### Proveedores
-
+![Proveedores](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/proveedores_ss.jpg)
 Desde aquí mandamos al usuario al menú desde el cual podrá agregar un nuevo proveedor y consultar un proveedor.
 
 ### Solicitud de Entrega del Producto
