@@ -30,3 +30,4 @@ Desde aquí el usuario podra dirigirse al menú de Solicitud de Entrega del Prod
 ### Solicitud de Procesos detenidos
 
 Desde este apartado el usuario podrá consultar y registrar los procesos detenidos. Solo deberá darle click a los botones indicados.
+![Procesos](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/procesos_detenidos.png)
