@@ -20,13 +20,14 @@ Utilizamos Git para colaborar entre todos, y en nuestro código utilizamos la li
 ## Descripcion de los Apartados
 
 ### Proveedores
-
+![Proveedores](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/proveedores_ss.jpg)<br>
 Desde aquí mandamos al usuario al menú desde el cual podrá agregar un nuevo proveedor y consultar un proveedor.
 
 ### Solicitud de Entrega del Producto
-
+![Solicitud de Entrega](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/solicitudEntrega.png)<br>
 Desde aquí el usuario podra dirigirse al menú de Solicitud de Entrega del Producto, aqui el usuario podra agregar o eliminar alguna solicitud de entrega del producto.
 
 ### Solicitud de Procesos detenidos
 
 Desde este apartado el usuario podrá consultar y registrar los procesos detenidos. Solo deberá darle click a los botones indicados.
+![Procesos](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/procesos_detenidos.png)
