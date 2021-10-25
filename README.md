@@ -24,7 +24,7 @@ Utilizamos Git para colaborar entre todos, y en nuestro código utilizamos la li
 Desde aquí mandamos al usuario al menú desde el cual podrá agregar un nuevo proveedor y consultar un proveedor.
 
 ### Solicitud de Entrega del Producto
-
+![Solicitud de Entrega](https://github.com/tecnologia-vanguardia/tarea-dashboard/blob/desarrollo/assets/imagenes/solicitudEntrega.png)<br>
 Desde aquí el usuario podra dirigirse al menú de Solicitud de Entrega del Producto, aqui el usuario podra agregar o eliminar alguna solicitud de entrega del producto.
 
 ### Solicitud de Procesos detenidos
